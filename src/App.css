@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* .custom-navbar{
+  background: linear-gradient(270deg, rgba(111, 118, 141, 0.29) 0%, rgba(227, 171, 148, 0.29) 100%), 
+              linear-gradient(90deg, #3C4155 21.1%, #AD8979 100%);
+  opacity: 0.3;
+} */
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.yellow{
+  color: yellowgreen;
+}
