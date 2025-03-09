@@ -1,10 +1,16 @@
 import Home_Hero_Img from './assets/images/Home_Hero_background.jpg'
 import ImageComponent from './components/Image'; 
+import ReviewCard from './components/ReviewCard';
+
+// Correctly import images
+import pexelsImage from './assets/images/pexels-alok-kumar-273007-15031440.jpg';
+import moscowImage from './assets/images/moscow-4294240.jpg';
+import aiGeneratedImage from './assets/images/ai-generated-9106987.jpg';
 
 const images = [
-    { src: './assets/images/pexels-alok-kumar-273007-15031440.jpg', title: 'Beautiful Landscape' },
-    { src: './assets/images/moscow-4294240.jpg', title: 'Moscow City' },
-    { src: './assets/images/ai-generated-9106987.jpg', title: 'AI Generated Art' },
+    { src: pexelsImage, title: 'Kedharnath' },
+    { src: moscowImage, title: 'Moscow City' },
+    { src: aiGeneratedImage, title: 'Great Wall of China' },
 ];
 
 
@@ -39,8 +45,10 @@ const HomeTab = () => {
       {/* Best Tours */}
       <div className="grid-flow-row w-full h-[30vh]">
         <ImageComponent images={images} />
-
-
+      </div>
+      <div className="flex flex-row w-full h-[30vh]">
+        <ReviewCard reviewText="Great" profileImage="" name="ABC"/>
+        <ReviewCard reviewText="Excellent" profileImage="" name="DEF"/>
       </div>
       </>
     );
