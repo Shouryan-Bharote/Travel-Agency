@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+This is a React.js project for a Travel Agency website that helps users plan trips, select tour packages, and arrange pickups from their chosen locations. The website is built using Vite + React and styled with Tailwind CSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+🏝️ Tour Packages – Browse available travel packages.
+🚗 Pickup Service – Select a pickup location for your journey.
+📖 Blog Section – Travel tips and guides.
+📱 Responsive Design – Optimized for all devices.
+🍔 Mobile Navigation – Interactive hamburger menu.
+🚀 Tech Stack
+Frontend: React.js, Vite, Tailwind CSS
+Icons: Lucide-react
+Routing: React Router
+📸 Screenshots
+(Add images of your project here!)
 
-Currently, two official plugins are available:
+🔧 Installation
+Clone the repo
+sh
+Copy
+Edit
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+Install dependencies
+sh
+Copy
+Edit
+npm install
+Start the development server
+sh
+Copy
+Edit
+npm run dev
+🎨 Customization
+To add custom colors in Tailwind CSS, modify tailwind.config.js:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
+js
+Copy
+Edit
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#F9CA6C", // Sunset Gold
+        dark: "#363837", // Charcoal Green
+      },
     },
   },
-})
-```
+};
+🤝 Contributing
+Feel free to fork the repository and submit a pull request!
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📜 License
+(Specify the license for your project, e.g., MIT, GPL, etc.)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
