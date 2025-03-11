@@ -8,7 +8,8 @@ export default {
     extend: {
       colors:{
         Gunmetal_Gray:"#363837",
-        Golden_Sand:"#F9CA6C "
+        Golden_Sand:"#F9CA6C ",
+        FooterBg:"D9D9D9",
       }
     },
   },

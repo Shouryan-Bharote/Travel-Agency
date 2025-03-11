@@ -1,11 +1,16 @@
 import Home_Hero_Img from './assets/images/Home_Hero_background.jpg'
 import ImageComponent from './components/Image'; 
-import ReviewCard from './components/ReviewCard';
+// import ReviewCard from './components/ReviewCard';
+import ReviewCard from './components/Card';
+import Footer from './components/Footer';
 
 // Correctly import images
 import pexelsImage from './assets/images/pexels-alok-kumar-273007-15031440.jpg';
 import moscowImage from './assets/images/moscow-4294240.jpg';
 import aiGeneratedImage from './assets/images/ai-generated-9106987.jpg';
+import CompassImg from './assets/images/Compass.jpg';
+
+import dummy from './assets/images/dummy.jpg';
 
 const images = [
     { src: pexelsImage, title: 'Kedharnath' },
@@ -43,13 +48,41 @@ const HomeTab = () => {
         <h2 className="f">Explore the World with our Tour packages created specially for you</h2>
       </div>
       {/* Best Tours */}
-      <div className="grid-flow-row w-full h-[30vh]">
+      <div className="grid-flow-row w-full h-[35vh]">
         <ImageComponent images={images} />
       </div>
-      <div className="flex flex-row w-full h-[30vh]">
-        <ReviewCard reviewText="Great" profileImage="" name="ABC"/>
-        <ReviewCard reviewText="Excellent" profileImage="" name="DEF"/>
+      <div className="w-full h-[30vh] flex flex-col justify-center items-center">
+        <h1 className="text-2xl md:text-3xl font-bold text-Golden_Sand">Testimonials</h1>
+        <h3 className="text-1xl md:text-2xl">What Our Travelers say</h3>
+        {/* <h2 className="f">Explore the World with our Tour packages created specially for you</h2> */}
       </div>
+
+      {/* Best Review Section  */}
+      <div className="BestReviews w-full h-[35vh] ml-auto flex flex-row justify-center items-center">
+        <ReviewCard 
+          reviewText="This is an amazing experience!" 
+          profileImage={dummy}
+          name="John Doe" 
+        />
+        <ReviewCard 
+          reviewText="This is an amazing experience!" 
+          profileImage={dummy}
+          name="John Doe" 
+        />
+        <ReviewCard 
+          reviewText="This is an amazing experience!" 
+          profileImage={dummy}
+          name="John Doe" 
+        />
+      </div>
+
+      {/* Footer Image  */}
+      <div className="w-full h-[60vh] bg-cover bg-center bg-no-repeat" 
+      style={{ backgroundImage: `url(${CompassImg})` }}> 
+      </div>
+
+      {/* Footer  */}
+      <Footer />
       </>
     );
   };
