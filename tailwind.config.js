@@ -9,7 +9,8 @@ export default {
       colors:{
         Gunmetal_Gray:"#363837",
         Golden_Sand:"#F9CA6C ",
-        FooterBg:"D9D9D9",
+        Soft_Grey:"#D9D9D9",
+
       }
     },
   },
@@ -17,4 +18,3 @@ export default {
     require('tailwind-scrollbar-hide')
   ],
 }
-

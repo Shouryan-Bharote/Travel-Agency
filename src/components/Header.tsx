@@ -6,7 +6,7 @@ const Header: React.FC = ()=>{
     return(
         <>
         
-        <div className="bg-gray-900 sticky top-0 z-20 opacity-50  mx-auto flex flex-wrap w-full items-center justify-between border-b border-gray-500 p-8">
+        <div className="bg-gray-900 sticky top-0 z-20 opacity-50  mx-auto flex flex-wrap w-full items-center justify-between border-b border-gray-500 p-2">
             <Logo/>
             <Nav/>
         </div>

@@ -2,6 +2,7 @@ import Home_Hero_Img from './assets/images/Home_Hero_background.jpg'
 import ImageComponent from './components/Image'; 
 // import ReviewCard from './components/ReviewCard';
 import ReviewCard from './components/Card';
+// import Footer from './components/MyFooter';
 import Footer from './components/Footer';
 
 // Correctly import images
@@ -49,7 +50,9 @@ const HomeTab = () => {
       </div>
       {/* Best Tours */}
       <div className="grid-flow-row w-full h-[35vh]">
+        <div className="max-w-[1240px] mx-auto">
         <ImageComponent images={images} />
+        </div>
       </div>
       <div className="w-full h-[30vh] flex flex-col justify-center items-center">
         <h1 className="text-2xl md:text-3xl font-bold text-Golden_Sand">Testimonials</h1>
