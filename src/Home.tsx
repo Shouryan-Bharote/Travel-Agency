@@ -14,9 +14,9 @@ import CompassImg from './assets/images/Compass.jpg';
 import dummy from './assets/images/dummy.jpg';
 
 const images = [
-    { src: pexelsImage, title: 'Kedharnath' },
-    { src: moscowImage, title: 'Moscow City' },
-    { src: aiGeneratedImage, title: 'Great Wall of China' },
+    { src: './assets/images/pexels-alok-kumar-273007-15031440.jpg', title: 'Beautiful Landscape' },
+    { src: './assets/images/moscow-4294240.jpg', title: 'Moscow City' },
+    { src: './assets/images/ai-generated-9106987.jpg', title: 'AI Generated Art' },
 ];
 
 
